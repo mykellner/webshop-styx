@@ -159,28 +159,195 @@
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+
+/*import fonts from google font library*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@700&display=swap');
+
+
+/*basic bootstrap overrides*/
+
+/*smooth out the scroll*/
+html {
+    scroll-behavior: smooth;
 }
 
-#nav {
-  padding: 30px;
+/*update font family*/
+body, p, li, div{
+    font-family: 'Open Sans', sans-serif;
+
 }
 
-#nav a {
-  font-weight: bold;
-  color: rgb(106, 106, 180);
+/*update attributes for headings*/
+h1, h2, h3, h4, h5{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    color: #485460 !important;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+p{
+    text-align: justify;
 }
 
-.searchfield {
-  width: 100%;
+footer{
+    background-color: #353b48;
 }
+
+/*heading shadow and font size*/
+header h1{
+    font-size: 5.5vh;
+    text-shadow: 2px 2px 2px #000;
+}
+header h3 {
+    text-shadow: 2px 2px 2px #000;
+    font-size: 3.5vh;
+}
+
+/*--------------------------Navbar Jumbotron Style---------------------------*/
+/*set navbar opacity*/
+.navbar{
+    opacity: 0.9;
+}
+
+.jumbotron{
+    /* background-image: url("../assets/images/header.png") ; */
+    background-position: center center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jumbotron button{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+}
+
+.jumbotron p{
+    text-align: center;
+}
+
+/* arrow down icon bounce assisted by keyframe*/
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+/* bounce keyframe from -moz*/
+@-moz-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -moz-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -moz-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -moz-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+/* bounce keyframe from webkit*/
+@-webkit-keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+
+/* bounce keyframe */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        -moz-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        -moz-transform: translateY(-30px);
+        -ms-transform: translateY(-30px);
+        -webkit-transform: translateY(-30px);
+        transform: translateY(-30px);
+    }
+    60% {
+        -moz-transform: translateY(-15px);
+        -ms-transform: translateY(-15px);
+        -webkit-transform: translateY(-15px);
+        transform: translateY(-15px);
+    }
+}
+
+
+
+/*--------------------------End of navbar and jumbotron css and start of content------------------*/
+/* rubiks cards-aside section background colour*/
+#rubiks {
+    background-color: #ecf0f1;
+}
+#cards-aside{
+    background-color: #f7f1e3;
+}
+
+/* card shadow by default */
+.card {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+/* grow card shadow on hover */
+.card:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/*---------------------- Media queries over rides ---------------------------------*/
+
+@media screen and (min-width: 576px) {  }
+
+
+@media screen and (min-width: 768px) {
+    /* padding increased */
+    .jumbotron .container{
+        padding-top: 7rem!important;
+
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+    /* padding increased */
+    .jumbotron .container{
+        padding-top: 7vh!important;
+
+    }
+    /* font size adjusted*/
+    .jumbotron h1{
+        font-size: 3.5rem;
+    }
+
+    /*each even instances of row inside rubiks section should have row reverse */
+    #rubiks div.row:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    /* padding increased */
+    .jumbotron .container{
+        padding-top: 14vh!important;
+    }
+    /* padding increased */
+    .jumbotron h1{
+        font-size: 4.5rem;
+    }
+}
+
 </style>
