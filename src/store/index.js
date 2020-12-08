@@ -8,12 +8,12 @@ export default new Vuex.Store({
     products:[
       {
         id:"1",
-        name:"",
-        description:"",
-        price:"",
-        origin:"",
+        name:"Casa Marrone Appassimento",
+        description:"Kryddig smak med fatkaraktär, inslag av körsbär, chokladpraliner, romrussin och vanilj.",
+        price:"99",
+        origin:"Italien",
         image:"",
-        category:""
+        category:"Red wine"
       },
       {
         id:"2",
