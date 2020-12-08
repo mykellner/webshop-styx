@@ -32,7 +32,35 @@ export default new Vuex.Store({
         origin:"Spanien",
         image:"",
         category:1
-        }
+        },
+        {
+          id:4,
+          name:"Mateus",
+          description:"Fruity, pearly taste with hints of jelly raspberry, peach and blood orange.",
+          price:"69",
+          origin:"Portugal",
+          image:"",
+          category:3
+          },
+          {
+          id:5,
+          name:"Cuvée Madame",
+          description:"Berry, very fresh taste with hints of strawberries, fresh herbs, rowanberries and blood grapefruit.",
+          price:"129",
+          origin:"France",
+          image:"",
+          category:3
+          },
+          
+          {
+          id:6,
+          name:"Marquis de Beys Red",
+          description:"Berry, very fresh taste with hints of strawberries, fresh herbs, rowanberries and blood grapefruit.",
+          price:"199",
+          origin:"Libanon",
+          image:"",
+          category:1
+          },
     ], 
     categories:[
       {
