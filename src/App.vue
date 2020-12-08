@@ -48,7 +48,7 @@
                         <h1 class="text-white">WINE!</h1>
 
                         <!-- smooth scroll to rubik section -->
-                         <input type="text" placeholder="Type your search.." class="searchfield">
+                         <input type="text" placeholder="Type your search.." class="searchfield" v-on:keyup="search">
                         <p>
                             <!-- bouncing svg arrow down -->
                             <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-chevron-double-down bounce" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -141,9 +141,9 @@
                                 <div class="card">
                                     <img src="assets/images/how-to-setup-laravel-5.7.png" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">Laravel Setup</h5>
-                                        <p class="card-text">Before we start, let’s make sure we have requirement 1 to 9 installed in our system. For that, we will</p>
-                                        <a href="https://laravel.com" class="btn btn-primary">Learn More</a>
+                                        <h5 class="card-title">Product name..</h5>
+                                        <p class="card-text">Product information.. try search</p>
+                                        <a href="https://laravel.com" class="btn btn-primary">Read More</a>
                                     </div>
                                 </div>
                             </div>
@@ -167,18 +167,22 @@
 
 <script>
 export default {
-
- 
-
-  mounted(){
-    console.log(this.$store.state.products)    
-  },
-
-  computed: {
-    
-  }
-  
+  methods: {
+  search: function (){
+    let input = document.querySelector(".searchfield")
+    let cards = document.querySelectorAll(".card");
+    for(let card of cards){
+      console.log(card.textContent);
+        if(card.textContent.toLowerCase().includes(input.value.toLowerCase())){
+            card.style.display = "flex";
+        } else {
+            card.style.display = "none"
+        }
+    }
+    }
 }
+}
+
 </script>
 
 <style>
