@@ -17,12 +17,12 @@ export default new Vuex.Store({
       },
       {
         id:"2",
-        name:"",
-        description:"",
-        price:"",
-        origin:"",
+        name:"Tommasi Adorato Appassionato",
+        description:"Druvig smak med inslag av gula päron, mandel, vit persika och citrusskal.",
+        price:"95",
+        origin:"Italien",
         image:"",
-        category:""
+        category:"White wine"
       },
       {
         id:"3",
