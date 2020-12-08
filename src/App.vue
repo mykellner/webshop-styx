@@ -158,6 +158,22 @@
   </div>
 </template>
 
+<script>
+export default {
+
+ 
+
+  mounted(){
+    console.log(this.$store.state.products)    
+  },
+
+  computed: {
+    
+  }
+  
+}
+</script>
+
 <style>
 
 /*import fonts from google font library*/
