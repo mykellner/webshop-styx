@@ -38,10 +38,35 @@
                 </div>
             </nav>
 
+            <div class="container-full-bg">
+                <div class="jumbotron jumbotron-fluid mb-0">
+                    <div class="container align-middle text-center text-white pt-5">
+
+                        <h3 class="mt-5 pt-5 text-white">
+                            WINE..?
+                        </h3>
+                        <h1 class="text-white">WINE!</h1>
+
+                        <!-- smooth scroll to rubik section -->
+                        <a href="#rubiks" class="mt-5 mb-5 btn btn-lg btn-outline-light">Button to?</a>
+                        <p>
+                            <!-- bouncing svg arrow down -->
+                            <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-chevron-double-down bounce" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                                <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </p>
+
+
+
+                    </div>
+                </div>
+            </div>
+
      
-      <router-link to="/about">About</router-link>
       </header>
       <main>
+
 
       </main>
       <footer>
