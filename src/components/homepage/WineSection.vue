@@ -6,7 +6,7 @@
                         <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
 
                             <!-- cards with 3 columns max -->
-                            <Products />
+                            <Products v-for="(product, i) of products" :key="i" :product="product"/>
 
                         </div>
                     </div>
@@ -18,7 +18,13 @@
 <script>
 import Products from './Products.vue'
 export default {
-    components:{ Products }
+    components:{ Products },
+
+     data() {
+        return {
+            products: this.$store.state.products
+        }
+    },
 } 
 </script>
 

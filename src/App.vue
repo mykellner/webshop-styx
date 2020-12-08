@@ -4,6 +4,7 @@
         <header>
             <!--fixed navigation on top of the page-->
             <nav-bar />
+
             <!-- display jumbotron -->
             <jumbo-tron />
 
@@ -30,20 +31,25 @@ import JumboTron from './components/JumboTron.vue'
 export default {
 
   components:{ NavBar, JumboTron },
-  methods: {
-  search: function (){
-    let input = document.querySelector(".searchfield")
-    let cards = document.querySelectorAll(".card");
-    for(let card of cards){
-      console.log(card.textContent);
-        if(card.textContent.toLowerCase().includes(input.value.toLowerCase())){
-            card.style.display = "flex";
-        } else {
-            card.style.display = "none"
-        }
-    }
-    }
-}
+
+  
+  
+  
+  
+    //   methods: {
+    //   search: function (){
+    //     let input = document.querySelector(".searchfield")
+    //     let cards = document.querySelectorAll(".card");
+    //     for(let card of cards){
+    //       console.log(card.textContent);
+    //         if(card.textContent.toLowerCase().includes(input.value.toLowerCase())){
+    //             card.style.display = "flex";
+    //         } else {
+    //             card.style.display = "none"
+    //         }
+    //     }
+    //     }
+    // }
 }
 
 </script>

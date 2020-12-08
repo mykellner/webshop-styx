@@ -3,9 +3,10 @@
             <div class="card">
                 <img src="assets/images/how-to-setup-laravel-5.7.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Laravel</h5>
-                    <p class="card-text">Laravel homestead provides you a perfect environment for you to develop any application that you want.</p>
-                    <a href="https://laravel.com" class="btn btn-primary">Learn More</a>
+                    <h5 class="card-title">{{ product.name }}</h5>
+                    <p class="card-text">{{ product.description }}</p>
+                    <a href="#" class="btn btn-primary">Details</a>
+                    <a href="#" class="btn btn-primary">{{ product.price }}</a>
                 </div>
             </div>
         </div>       
@@ -15,6 +16,16 @@
 
 <script>
 export default {
+
+    props: {
+        product: {
+            type:Object,
+        },
+    }
+
+   
+
+   
     
 }
 </script>
