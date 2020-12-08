@@ -61,6 +61,43 @@ export default new Vuex.Store({
           image:"",
           category:1
           },
+          {
+          id:7,
+          name:"Kleine Zalze Vintner’s Selection Rosé",
+          description:"Berry taste with hints of strawberries, blood grapefruit, herbs and watermelon.",
+          price:"119",
+          origin:"South Africa",
+          image:"",
+          category:3
+          },
+          {
+          id:8,
+          name:"Franschhoek Cellar Reserve Chardonnay",
+          description:"Fruity, nuanced taste with barrel character, hints of yellow apples, minerals, nectarine, cardamom, butter and orange.",
+          price:"79",
+          origin:"South Africa",
+          image:"",
+          category:2
+          },
+          {
+          id:9,
+          name:"Viña Maipo",
+          description:" Youthful, fruity taste with hints of yellow apples, pineapple, honey and herbs..",
+          price:"59",
+          origin:"Chile",
+          image:"",
+          category:2 
+        },
+        {
+          id:10,
+          name:"Figli Luigi Oddero Barolo,",
+          description:" Complex, spicy taste with barrel character, hints of cherries, roses, sandalwood, raspberries, nougat, orange, black tea and cinnamon.",
+          price:"349",
+          origin:"Italy",
+          image:"",
+          category:1 
+        },
+          
     ], 
     categories:[
       {
