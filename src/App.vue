@@ -2,24 +2,17 @@
   <div id="app">
     <div id="nav">
         <header>
-
             <!--fixed navigation on top of the page-->
             <nav-bar />
-
             <!-- display jumbotron -->
             <jumbo-tron />
 
-
-            <!-- display main content -->
-            <router-view/>
-
-            
-
-     
+                
       </header>
       <main>
 
-          
+           <!-- display main content -->
+            <router-view/>     
 
       </main>
       <footer>
