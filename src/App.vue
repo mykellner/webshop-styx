@@ -67,6 +67,83 @@
       </header>
       <main>
 
+           <div class="row">
+                <!-- card column-->
+                    <div class="col-md-12 col-lg-12">
+                    <!--implementation of cards with card grid, 3 cols for xl, 2 for mds and 1 for rest-->
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
+
+                            <!-- cards with 3 columns max -->
+                            <div class="col md-4">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Laravel</h5>
+                                        <p class="card-text">Laravel homestead provides you a perfect environment for you to develop any application that you want.</p>
+                                        <a href="https://laravel.com" class="btn btn-primary">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col md-4">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Wordpress</h5>
+                                        <p class="card-text">The last thing you want to happen is to wake up one morning to discover your site in shambles. </p>
+                                        <a href="https://wordpress.org" class="btn btn-primary">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col md-4">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">SSH access</h5>
+                                        <p class="card-text">You have bought your new VPS in a quest take your game up. You have been given all the credentials </p>
+                                        <a href="https://ubuntu.com" class="btn btn-primary">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col md-4">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Joomla</h5>
+                                        <p class="card-text">As most recent statistics show, Joomla is a popular open-source website platform. Joomla is used</p>
+                                        <a href="https://joomla.org" class="btn btn-primary">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col md-4">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">SEO Tips</h5>
+                                        <p class="card-text">There are other major SEO tricks that you can do to take your website to next level.  </p>
+                                        <a href="https://neilpatel.com/blog/10-most-important-seo-tips-you-need-to-know/" class="btn btn-primary">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col md-4">
+                                <div class="card">
+                                    <img src="https://via.placeholder.com/150" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Laravel Setup</h5>
+                                        <p class="card-text">Before we start, let’s make sure we have requirement 1 to 9 installed in our system. For that, we will</p>
+                                        <a href="https://laravel.com" class="btn btn-primary">Learn More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    </div>
 
       </main>
       <footer>
