@@ -48,7 +48,7 @@
                         <h1 class="text-white">WINE!</h1>
 
                         <!-- smooth scroll to rubik section -->
-                        <a href="#rubiks" class="mt-5 mb-5 btn btn-lg btn-outline-light">Button to?</a>
+                         <input type="text" placeholder="Type your search.." class="searchfield">
                         <p>
                             <!-- bouncing svg arrow down -->
                             <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-chevron-double-down bounce" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -71,7 +71,7 @@
                 <!-- card column-->
                     <div class="col-md-12 col-lg-12">
 
-                       <input type="text" placeholder="Type your search.." class="searchfield">
+                      
                     <!--implementation of cards with card grid, 3 cols for xl, 2 for mds and 1 for rest-->
                         <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
 
