@@ -167,6 +167,26 @@
 
 <script>
 export default {
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+ 
+
+  mounted(){
+    console.log(this.$store.state.products)    
+  },
+
+  computed: {
+    
+  }
+  
+}
+=======
+=======
+>>>>>>> developer
+>>>>>>> Stashed changes
   methods: {
   search: function (){
     let input = document.querySelector(".searchfield")
@@ -183,6 +203,13 @@ export default {
 }
 }
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+>>>>>>> developer
+=======
+>>>>>>> developer
+>>>>>>> Stashed changes
 </script>
 
 <style>
