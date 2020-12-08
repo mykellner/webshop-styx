@@ -26,13 +26,13 @@ export default new Vuex.Store({
       },
       {
         id:"3",
-        name:"",
-        description:"",
-        price:"",
-        origin:"",
+        name:"Castillo Monjardin",
+        description:"Kryddig, fruktig smak med fatkaraktär, inslag av mörka körsbär, choklad, svarta vinbär, örter, plommon och kaffe.",
+        price:"119",
+        origin:"Spanien",
         image:"",
-        category:""
-      }
+        category:"Red wine"
+        }
     ], 
     categories:[
       {
