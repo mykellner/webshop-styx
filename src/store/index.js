@@ -9,27 +9,27 @@ export default new Vuex.Store({
       {
         id:1,
         name:"Casa Marrone Appassimento",
-        description:"Kryddig smak med fatkaraktär, inslag av körsbär, chokladpraliner, romrussin och vanilj.",
+        description:"Spicy taste with barrel character, hints of cherries, chocolate pralines, rum raisins and vanilla.",
         price:"99",
-        origin:"Italien",
+        origin:"Italy",
         image:"",
         category:1
       },
       {
         id:2,
         name:"Tommasi Adorato Appassionato",
-        description:"Druvig smak med inslag av gula päron, mandel, vit persika och citrusskal.",
+        description:"Grape flavor with hints of yellow pear, almond, white peach and citrus peel.",
         price:"95",
-        origin:"Italien",
+        origin:"Italy",
         image:"",
         category:2
       },
       {
         id:3,
         name:"Castillo Monjardin",
-        description:"Kryddig, fruktig smak med fatkaraktär, inslag av mörka körsbär, choklad, svarta vinbär, örter, plommon och kaffe.",
+        description:"Spicy, fruity taste with barrel character, hints of dark cherries, chocolate, black currants, herbs, plums and coffee.",
         price:"119",
-        origin:"Spanien",
+        origin:"Spain",
         image:"",
         category:1
         },
