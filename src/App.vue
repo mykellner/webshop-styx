@@ -70,6 +70,8 @@
            <div class="row">
                 <!-- card column-->
                     <div class="col-md-12 col-lg-12">
+
+                       <input type="text" placeholder="Type your search.." class="searchfield">
                     <!--implementation of cards with card grid, 3 cols for xl, 2 for mds and 1 for rest-->
                         <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
 
@@ -176,5 +178,9 @@
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.searchfield {
+  width: 100%;
 }
 </style>
