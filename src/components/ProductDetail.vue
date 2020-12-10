@@ -1,46 +1,30 @@
 <template>
-  <div class="row">
-                <div class="col-lg-4 order-lg-2 order-1">
-                        <div class="image_selected"><img src="img/CastilloMonjardin.png" alt=""></div>
+   <div class="container">
+   
+                <div class="row">
+
+                  <div class="col-sm">
+
+                   <img class="image_selected" src="img/CastilloMonjardin.png" alt="">
+                     </div>
+                        <div class="col-sm">
+
+                        <div class="product_name">Castillo Monjardin</div>
+
+                        <div> <span class="product_price">199 :-</span>
+
+                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, optio nemo cupiditate nulla, delectus ad esse at, eveniet debitis animi maxime laborum enim exercitationem aspernatur non eos illo quas reiciendis?</p>
+
                     </div>
-                    <div class="col-lg-6 order-3">
-                        <div class="product_description">
-                       
-                           
-                           <div class="product_name">Castillo Monjardin</div>
-                           <div> <span class="product_price">199 :-</span>
-                               </div>
-                               <div class="single_product">
-                                   <div class="container-fluid" style=" background-color: #fff; padding: 11px;">
-                            <div> <span class="product_info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus rem suscipit pariatur reiciendis natus, numquam asperiores. Quae, dolorum est voluptatem quidem, deserunt dolorem nisi ad magni, hic eum corporis optio!</span> </div>
-                            <div>
-                                <div class="row">
-                                    <div class="col-md-5">
-                                        <div class="br-dashed">
-                                            <div class="row">
-                                                <div class="col-md-3 col-xs-3"> <img src="#" alt=""> </div>
-                                             
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6"> </div>
-                                </div>
-                                
-                            <hr class="singleline">
-                            <div class="order_info d-flex flex-row">
-                                <form action="#">
-                                </form> </div>
-                            <div class="row">
-                                <div class="col-xs-6"> <button type="button" class="btn btn-danger shop-button">Add to cart</button> 
-                                </div>
-                            </div>
-                        </div>
+
+                         <div class="row">
+                        <div class="col-xs-6"> <button type="button" class="btn btn-danger shop-button">Add to cart</button> 
                     </div>
                 </div>
-               
-                    </div>
-                </div>
-            </div>
+                  
+             </div>
+        </div>
+    </div>
 </template>
 
 <script>
