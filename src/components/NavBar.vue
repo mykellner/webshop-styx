@@ -34,7 +34,7 @@
                                 </button>
                                 <div class="dropdown-menu">
                                          
-                                    <router-link to="" class="dropdown-item">Checkout</router-link>                                                                  
+                                    <router-link to="/checkout" class="dropdown-item">Checkout</router-link>                                                                  
                                     <!-- <a class="dropdown-item" href="/checkout">Checkout</a> -->
                                 </div>
                                 </div>
