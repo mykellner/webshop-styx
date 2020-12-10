@@ -37,7 +37,7 @@ export default {
 .jumbotron{
     background-image: url("../assets/header.jpg") ;
     background-position: center center;
-    height: 100vh;
+    /* height: 100vh; */
     background-repeat: no-repeat;
     background-size: cover;
 }
