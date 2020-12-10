@@ -3,23 +3,25 @@
    
                 <div class="row">
 
-                  <div class="col-sm">
+                  <div class="col-6">
 
-                   <img class="image_selected" src="img/CastilloMonjardin.png" alt="">
+                   <img class="image_selected" src="assets/appassimento.png" alt="">
                      </div>
-                        <div class="col-sm">
+                        <div class="col-6 product-information">
+                            <div class="product-info">
 
-                        <div class="product_name">Castillo Monjardin</div>
+                        <div class="product_name">{{wine.name}}
 
-                        <div> <span class="product_price">199 :-</span>
+                        <span class="product_price">{{wine.price}} :- </span>
+                        </div>
 
-                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, optio nemo cupiditate nulla, delectus ad esse at, eveniet debitis animi maxime laborum enim exercitationem aspernatur non eos illo quas reiciendis?</p>
+                         <p>{{wine.description}}</p>
 
                     </div>
 
-                         <div class="row">
-                        <div class="col-xs-6"> <button type="button" class="btn btn-danger shop-button">Add to cart</button> 
-                    </div>
+                         <div class="row button-div">
+                        <button type="button" class="btn btn-danger shop-button">Add to cart</button> 
+                    
                 </div>
                   
              </div>
@@ -29,39 +31,45 @@
 
 <script>
 export default {
+
+    computed: {
+        wine () {
+            return this.$store.state.selectedWine
+        }
+    }
   
 }
 </script>
 
 <style scoped>
-  .single_product {
+  /* .single_product {
       padding-top: 66px;
       padding-bottom: 140px;
       margin-top: 0px;
       padding: 17px
-  }
+  } */
 
   .product_name {
       font-size: 25px;
       font-weight: 400;
-      margin-top: 60px;
-      margin-left:26px;
+      /* margin-top: 60px;
+      margin-left:26px; */
       font-family: georgia;
+      
+  }
+
+  .product-information {
+      padding: 20px;
   }
 
 
   .product_price {
-      display: inline-block;
+      /* display: inline-block; */
       font-size: 30px;
       font-weight: 500;
       margin-top: 9px;
-      clear: left;
-      margin-left:26px;
-  }
-
-
-  .product_info {
-      display: inline-block
+      /* clear: left; */
+      /* margin-left:26px; */
   }
 
   body {
@@ -72,13 +80,13 @@ export default {
       color: #000000
   }
 
-  div {
+  /* div {
       display: block;
       position: relative;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box
-  }
+  } */
 
   ul {
       list-style: none;
@@ -91,6 +99,12 @@ export default {
       width: 150px;
       height: 50px;
       font-size: 20px;
+      margin-left: 10px;
+  }
+
+  .button-div {
+      margin-top: 20px;
+      
   }
 
   .single_product {

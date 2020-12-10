@@ -115,8 +115,23 @@ export default new Vuex.Store({
     ],   
     isAdmin:[],    
     cart:[],
+    selectedWine: {}
+   
   },
+
+  getters: {
+    getSelectedWine (state) {
+      return state.selectedWine
+    }
+  },
+
+
   mutations: {
+
+    setSelectedWine (state, wine){
+      state.selectedWine = wine;
+      console.log("Changed:", state.selectedWine)
+    },
 
     addToCart(state, wine)
     {
@@ -141,9 +156,14 @@ export default new Vuex.Store({
       
       console.log(state.cart);
     }
+   
   },
+
   actions: {
   },
   modules: {
   }
 })
+
+
+
