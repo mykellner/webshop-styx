@@ -14,14 +14,34 @@
             <label for="card-details">Card Details</label>
             <input type="card-details" class="form-control" id="card-details" placeholder="Card details">
          </div>
-         <button type="submit" class="btn btn-danger shop-button">Submit order</button>
+         <button type="submit" v-on:click="confirmation" class="btn btn-danger shop-button">Submit order</button>
         </form>
+    </div>
+
+    <div class="confirmation-div">
+       
     </div>
 
 </div>
 
     
 </template>
+
+<script>
+export default {
+    data () {
+
+    },
+    methods: {
+        confirmation: function () {
+            
+             let text = "This is the confirmation";
+             let p = document.querySelector(".confirmation-div");
+             p.insertAdjacentHTML('afterbegin', `<p id="test">${text}</p>`)
+        }
+    }
+}
+</script>
 
 <style scoped>
 
