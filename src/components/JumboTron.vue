@@ -3,13 +3,11 @@
                 <div class="jumbotron jumbotron-fluid mb-0">
                     <div class="container align-middle text-center text-white pt-5">
 
-                        <h3 class="mt-5 pt-5 text-white">
+                        <h3 class="text-white">
                             Did you say wine?
                         </h3>
-                        <h1 class="text-white">Because, we sell wine!</h1>
-
-                        <!-- smooth scroll to rubik section -->
-                         <input type="text" placeholder="Type your search.." class="searchfield">
+                        <h1 class="text-white">Because, we well wine!</h1>
+                        
                         <p>
                             <!-- bouncing svg arrow down -->
                             <svg width="3em" height="3em" viewBox="0 0 16 16" class="bi bi-chevron-double-down bounce" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
