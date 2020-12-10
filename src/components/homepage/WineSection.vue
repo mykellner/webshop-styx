@@ -38,10 +38,14 @@ export default {
     computed: {
         // get wines all wine when search is not happening      
         getWines(){
-            // get all the wine when search is empty or match wine to search keyword
-            return this.wines.filter( wine => {
-                return !this.keyword || wine.name.toLowerCase().indexOf(this.keyword.toLowerCase()) > -1
-            })
+            // if the keyword is empty
+            // return all wines
+            // else filter related wines in keyword. 
+            return this.wines.filter(  wine => {
+                return !this.keyword || wine.name.toLowerCase().indexOf(this.keyword.toLowerCase()) > -1          
+
+            } );
+           
         }
         
     }
