@@ -6,7 +6,7 @@
                         <h3 class="mt-5 pt-5 text-white">
                             Did you say wine?
                         </h3>
-                        <h1 class="text-white">Because, we well wine!</h1>
+                        <h1 class="text-white">Because, we sell wine!</h1>
 
                         <!-- smooth scroll to rubik section -->
                          <input type="text" placeholder="Type your search.." class="searchfield">
