@@ -1,12 +1,12 @@
 <template>
     <div class="col mb-4">
             <div class="card">
-                <img src="assets/images/how-to-setup-laravel-5.7.png" class="card-img-top" alt="...">
+                <img :src="wine.image" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">{{ product.name }}</h5>
-                    <p class="card-text">{{ product.description }}</p>
+                    <h5 class="card-title">{{ wine.name }}</h5>
+                    <p class="card-text">{{ wine.description }}</p>
                     <a href="#" class="btn btn-primary">Details</a>
-                    <a href="#" class="btn btn-primary">{{ product.price }}</a>
+                    <a href="#" class="btn btn-primary">{{ wine.price }}</a>
                 </div>
             </div>
         </div>       
@@ -18,7 +18,7 @@
 export default {
 
     props: {
-        product: {
+        wine: {
             type:Object,
         },
     }

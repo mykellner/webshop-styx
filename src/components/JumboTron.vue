@@ -4,9 +4,9 @@
                     <div class="container align-middle text-center text-white pt-5">
 
                         <h3 class="mt-5 pt-5 text-white">
-                            WINE..?
+                            Did you say wine?
                         </h3>
-                        <h1 class="text-white">WINE!</h1>
+                        <h1 class="text-white">Because, we well wine!</h1>
 
                         <!-- smooth scroll to rubik section -->
                          <input type="text" placeholder="Type your search.." class="searchfield">
@@ -35,7 +35,7 @@ export default {
 
 
 .jumbotron{
-    /* background-image: url("../assets/images/header.png") ; */
+    background-image: url("../assets/header.jpg") ;
     background-position: center center;
     height: 100vh;
     background-repeat: no-repeat;

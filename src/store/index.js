@@ -21,7 +21,7 @@ export default new Vuex.Store({
         description:"Grape flavor with hints of yellow pear, almond, white peach and citrus peel.",
         price:"95",
         origin:"Italy",
-        image:"",
+        image:"Tommasi.png",
         category:2
       },
       {
@@ -67,7 +67,7 @@ export default new Vuex.Store({
           description:"Berry taste with hints of strawberries, blood grapefruit, herbs and watermelon.",
           price:"119",
           origin:"South Africa",
-          image:"",
+          image:"kleineZalze.png",
           category:3
           },
           {
@@ -76,7 +76,7 @@ export default new Vuex.Store({
           description:"Fruity, nuanced taste with barrel character, hints of yellow apples, minerals, nectarine, cardamom, butter and orange.",
           price:"79",
           origin:"South Africa",
-          image:"",
+          image:"Franschoek.png",
           category:2
           },
           {
@@ -94,7 +94,7 @@ export default new Vuex.Store({
           description:" Complex, spicy taste with barrel character, hints of cherries, roses, sandalwood, raspberries, nougat, orange, black tea and cinnamon.",
           price:"349",
           origin:"Italy",
-          image:"",
+          image:"figliluigi.png",
           category:1 
         },
           

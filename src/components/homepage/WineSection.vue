@@ -6,7 +6,7 @@
                         <div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
 
                             <!-- cards with 3 columns max -->
-                            <Products v-for="(product, i) of products" :key="i" :product="product"/>
+                            <Products v-for="(wine, i) in wines" :key="i" :wine="wine" />
 
                         </div>
                     </div>
@@ -22,7 +22,7 @@ export default {
 
      data() {
         return {
-            products: this.$store.state.products
+            wines: this.$store.state.products
         }
     },
 } 
