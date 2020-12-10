@@ -5,7 +5,7 @@
                 <div class="card-body">
                     <h5 class="card-title">{{ wine.name }}</h5>
                     <p class="card-text">{{ wine.description }}</p>
-                    <a href="#" class="btn btn-primary">Details</a>
+                    <router-link to="/product" class="btn btn-primary">Details</router-link>
                     <a href="#" class="btn btn-primary">{{ wine.price }}</a>
                 </div>
             </div>
