@@ -5,7 +5,8 @@
 
                   <div class="col-6">
 
-                   <img class="image_selected" src="assets/appassimento.png" alt="">
+                     <img :src="wine.image" class="image" alt="">
+
                      </div>
                         <div class="col-6 product-information">
                             <div class="product-info">
@@ -125,7 +126,7 @@ export default {
       margin-top: 10px;
   }
 
-  .image_selected img {
-      max-width: 100%
+  .image {
+    height: 30vw;
   }
 </style>

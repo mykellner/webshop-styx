@@ -1,7 +1,7 @@
 <template>
     <div class="col mb-4">
             <div class="card">
-                <img :src="wine.image" class="card-img-top" alt="...">
+                <img :src="wine.image" class="card-img-top mx-auto d-block" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">{{ wine.name }}</h5>
                     <p class="card-text">{{ wine.description }}</p>
@@ -63,4 +63,14 @@ export default {
 .card:hover {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
+
+.card-img-top {
+    width: 30%;
+    height: 15vw;
+    object-fit: cover;
+    
+}
+
+
+
 </style>
