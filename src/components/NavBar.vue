@@ -17,7 +17,7 @@
                 </div>
 
                 <!-- navigation wrapper -->
-                <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+                <div class="collapse navbar-collapse flex-grow-1 text-right mr-5" id="myNavbar">
                     <ul class="navbar-nav ml-auto flex-nowrap">
 
                         <li class="nav-item">
@@ -26,8 +26,18 @@
                         <li class="nav-item">
                             <router-link to="/about" class="nav-link m-2 menu-item">About us</router-link>
                         </li>
-                        <li class="nav-item">
-                            <router-link to="/checkout" class="nav-link m-2 menu-item">Checkout</router-link>
+                        <li class="nav-item dropdown">
+                            
+                            <div class="btn-group m-2">
+                                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    {{ howManyOrders }} Items
+                                </button>
+                                <div class="dropdown-menu">
+                                         
+                                    <router-link to="" class="dropdown-item">Checkout</router-link>                                                                  
+                                    <!-- <a class="dropdown-item" href="/checkout">Checkout</a> -->
+                                </div>
+                                </div>
                         </li>
                     </ul>
                 </div>
@@ -35,7 +45,15 @@
 </template>
 
 <script>
-export default {};
+export default {
+
+    computed: {
+        howManyOrders()
+        {
+            return this.$store.state.cart.length;
+        }
+    }
+};
 </script>
 
 <style scoped>
