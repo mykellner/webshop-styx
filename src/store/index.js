@@ -117,6 +117,30 @@ export default new Vuex.Store({
     cart:[],
   },
   mutations: {
+
+    addToCart(state, wine)
+    {
+      // check if cart already has this item or not
+      let existingItems = state.cart.find( o => (o.id === wine.id) )
+      
+      if(existingItems){
+          existingItems.qty += 1
+      }else{
+        let orders = {
+          id:wine.id,
+          name:wine.name,
+          description:wine.description,
+          qty:1,
+          price:wine.price,
+          origin:wine.origin,
+          image:"",
+          category:wine.category          
+        }
+        state.cart.push(orders)
+      }      
+      
+      console.log(state.cart);
+    }
   },
   actions: {
   },
