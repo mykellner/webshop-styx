@@ -72,5 +72,9 @@ export default {
 }
 
 
+.card-body {
+    height: 240px;
+}
+
 
 </style>
