@@ -21,7 +21,7 @@
                     </div>
 
                          <div class="row button-div">
-                        <button type="button" class="btn btn-danger shop-button">Add to cart</button> 
+                        <button type="button" v-on:click=addToCart(wine) class="btn btn-danger shop-button">Add to cart</button> 
                     
                 </div>
                   
@@ -37,7 +37,17 @@ export default {
         wine () {
             return this.$store.state.selectedWine
         }
-    }
+    },
+      methods:{
+        addToCart(wine)
+        {
+            // console log to check if the wine is appearing or not
+            // console.log(wine);
+            //  push item to cart object in the storage
+            this.$store.commit('addToCart', wine);
+            console.log(wine);
+        }
+      }
   
 }
 </script>
