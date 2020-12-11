@@ -4,7 +4,7 @@
                <div class=" container">
                    <div class="row">
                      <div class="col-sm"><h1>This is us</h1>
-                        <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet odit doloribus odio, sapiente, nisi qui labore vel inventore nam quod voluptatem laborum praesentium numquam asperiores, deleniti iure. Dolore, praesentium! Accusantium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptates eius ducimus error maiores cupiditate blanditiis illo expedita saepe deserunt. Sapiente enim quas asperiores voluptates repellendus incidunt nam temporibus quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere facilis aliquam dolore asperiores vel tenetur explicabo repudiandae. Dolorem animi ut eveniet, assumenda, beatae debitis aperiam reprehenderit inventore atque ducimus et.</h4>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet odit doloribus odio, sapiente, nisi qui labore vel inventore nam quod voluptatem laborum praesentium numquam asperiores, deleniti iure. Dolore, praesentium! Accusantium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptates eius ducimus error maiores cupiditate blanditiis illo expedita saepe deserunt. Sapiente enim quas asperiores voluptates repellendus incidunt nam temporibus quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere facilis aliquam dolore asperiores vel tenetur explicabo repudiandae. Dolorem animi ut eveniet, assumenda, beatae debitis aperiam reprehenderit inventore atque ducimus et.</p>
 
                     <button type="button" class="btn btn-danger">Order your wine now</button>
            </div>
@@ -22,7 +22,7 @@
                 <div class="col-sm"><img class="img-fluid" src="img/wineyard.jpg" alt="">
                 </div>
                      <div class="col-sm"><h1>Well selected wines just for you</h1>
-                         <h4>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet odit doloribus odio, sapiente, nisi qui labore vel inventore nam quod voluptatem laborum praesentium numquam asperiores, deleniti iure. Dolore, praesentium! Accusantium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptates eius ducimus error maiores cupiditate blanditiis illo expedita saepe deserunt. Sapiente enim quas asperiores voluptates repellendus incidunt nam temporibus quaerat!</h4>
+                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet odit doloribus odio, sapiente, nisi qui labore vel inventore nam quod voluptatem laborum praesentium numquam asperiores, deleniti iure. Dolore, praesentium! Accusantium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptates eius ducimus error maiores cupiditate blanditiis illo expedita saepe deserunt. Sapiente enim quas asperiores voluptates repellendus incidunt nam temporibus quaerat!</p>
 
                     </div>
                 </div>
