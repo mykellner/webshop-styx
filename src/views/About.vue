@@ -81,4 +81,4 @@ button {
     padding: 100px;
 }
 
-</template>
+</style>
