@@ -5,6 +5,10 @@
                 <div class="card-body">
                     <h5 class="card-title">{{ wine.name }}</h5>
                     <p class="card-text">{{ wine.description }}</p>
+               
+                </div>
+                     <div class="card-footer">
+                
                     <span v-on:click=selectedWine(wine)> <router-link to="/product" class="btn btn-primary">Details</router-link> </span>
                     <button href="#" class="btn btn-primary float-right" v-on:click=addToCart(wine)>
                         <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart-plus-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -12,7 +16,7 @@
                         </svg>
                         {{ wine.price }}
                     </button>
-                </div>
+                    </div>
             </div>
         </div>       
 
@@ -73,7 +77,7 @@ export default {
 
 
 .card-body {
-    height: 240px;
+    height: 185px;
 }
 
 
