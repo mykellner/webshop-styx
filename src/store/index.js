@@ -124,6 +124,10 @@ export default new Vuex.Store({
   getters: {
     getSelectedWine (state) {
       return state.selectedWine
+    },
+
+    getCartItems(state) {
+      return state.cart
     }
   },
 
@@ -157,6 +161,11 @@ export default new Vuex.Store({
       }      
       
       console.log(state.cart);
+    },
+
+    deleteItemFromCart(state, item){
+         
+         state.cart.splice(state.cart.indexOf(item),1)
     }
    
   },
