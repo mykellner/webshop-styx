@@ -39,6 +39,11 @@ export default {
             // console.log(wine);
             //  push item to cart object in the storage
             this.$store.commit('addToCart', wine);
+        },
+
+        selectedWine(wine)
+        {
+            this.$store.commit('setSelectedWine', wine);
         }
     }
 
