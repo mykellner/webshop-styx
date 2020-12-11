@@ -12,7 +12,7 @@ export default new Vuex.Store({
         description:"Spicy taste with barrel character, hints of cherries, chocolate pralines, rum raisins and vanilla.",
         price:"99",
         origin:"Italy",
-        image:"",
+        image:require("../assets/appassimento.png"),
         category:1
       },
       {
