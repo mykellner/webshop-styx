@@ -31,7 +31,7 @@ export default new Vuex.Store({
         description:"Spicy, fruity taste with barrel character, hints of dark cherries, chocolate, black currants, herbs, plums and coffee.",
         price:"119",
         origin:"Spain",
-        image:"",
+        image:require("../assets/CASTILLOMONJARDIN.png"),
         category:1
         },
         {
@@ -40,7 +40,7 @@ export default new Vuex.Store({
           description:"Fruity, pearly taste with hints of jelly raspberry, peach and blood orange.",
           price:"69",
           origin:"Portugal",
-          image:"",
+          image:require("../assets/MateusRosé.png"),
           category:3
           },
           {
@@ -49,7 +49,7 @@ export default new Vuex.Store({
           description:"Berry, very fresh taste with hints of strawberries, fresh herbs, rowanberries and blood grapefruit.",
           price:"129",
           origin:"France",
-          image:"",
+          image:require("../assets/CuvéeMadame.png"),
           category:3
           },
           
@@ -59,7 +59,7 @@ export default new Vuex.Store({
           description:"Berry, very fresh taste with hints of strawberries, fresh herbs, rowanberries and blood grapefruit.",
           price:"199",
           origin:"Libanon",
-          image:"",
+          image:require("../assets/Marquis de Beys Red.png"),
           category:1
           },
           {
@@ -86,7 +86,7 @@ export default new Vuex.Store({
           description:" Youthful, fruity taste with hints of yellow apples, pineapple, honey and herbs..",
           price:"59",
           origin:"Chile",
-          image:"",
+          image:require("../assets/Viña Maipo.png"),
           category:2 
         },
         {
