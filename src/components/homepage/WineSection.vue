@@ -42,7 +42,9 @@ export default {
             // return all wines
             // else filter related wines in keyword. 
             return this.wines.filter(  wine => {
-                return !this.keyword || wine.name.toLowerCase().indexOf(this.keyword.toLowerCase()) > -1          
+                
+                return wine.name.toLowerCase().match(this.keyword.toLocaleLowerCase());        
+                      
 
             } );
            
