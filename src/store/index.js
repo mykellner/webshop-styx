@@ -21,7 +21,8 @@ export default new Vuex.Store({
         description:"Grape flavor with hints of yellow pear, almond, white peach and citrus peel.",
         price:"95",
         origin:"Italy",
-        image:"Tommasi.png",
+        //https://stackoverflow.com/questions/53412106/linking-to-images-referenced-in-vuex-store-in-vue-js - require
+        image:require("../assets/Tommasi.png"),
         category:2
       },
       {
@@ -67,7 +68,7 @@ export default new Vuex.Store({
           description:"Berry taste with hints of strawberries, blood grapefruit, herbs and watermelon.",
           price:"119",
           origin:"South Africa",
-          image:"kleineZalze.png",
+          image:require("../assets/kleineZalze.png"),
           category:3
           },
           {
@@ -76,7 +77,7 @@ export default new Vuex.Store({
           description:"Fruity, nuanced taste with barrel character, hints of yellow apples, minerals, nectarine, cardamom, butter and orange.",
           price:"79",
           origin:"South Africa",
-          image:"Franschoek.png",
+          image:require("../assets/Franschhoek.png"),
           category:2
           },
           {
@@ -94,7 +95,7 @@ export default new Vuex.Store({
           description:" Complex, spicy taste with barrel character, hints of cherries, roses, sandalwood, raspberries, nougat, orange, black tea and cinnamon.",
           price:"349",
           origin:"Italy",
-          image:"figliluigi.png",
+          image:require("../assets/figliluigi.png"),
           category:1 
         },
           
@@ -115,8 +116,23 @@ export default new Vuex.Store({
     ],   
     isAdmin:[],    
     cart:[],
+    selectedWine: {}
+   
   },
+
+  getters: {
+    getSelectedWine (state) {
+      return state.selectedWine
+    }
+  },
+
+
   mutations: {
+
+    setSelectedWine (state, wine){
+      state.selectedWine = wine;
+      console.log("Changed:", state.selectedWine)
+    },
 
     addToCart(state, wine)
     {
@@ -141,9 +157,14 @@ export default new Vuex.Store({
       
       console.log(state.cart);
     }
+   
   },
+
   actions: {
   },
   modules: {
   }
 })
+
+
+
