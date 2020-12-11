@@ -1,85 +1,29 @@
 <template>
-<div class="container">
-    <div class="row checkout">
-        <div class="col-6">
-        <form v-on:submit="confirmation" v-show="formShow">
-         <div class="form-group">
-            <label for="name">Name</label>
-            <input type="name" class="form-control" id="name" placeholder="Your name">
-         </div>
-         <div class="form-group">
-            <label for="email">Email address</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter email">
-         </div>
-          <div class="form-group">
-            <label for="card-details">Card Details</label>
-            <input type="card-details" class="form-control" id="card-details" placeholder="Card details">
-         </div>
-         <button type="submit" class="btn btn-danger shop-button">Submit order</button>
-        </form>
-    </div>
-    </div>
+    <section id="checkout" class="pt-5 pb-5">
+        <shopping-cart v-for="(item, i) in cartItems" :key="i" :item="item" />
 
-    <div class="row confirmationrow">
-        <div class="confirmation-div">
-            <p v-show="conf">{{confText}}</p>
-        </div>
-        </div>
-
+        <shipping-info />
+    </section>
         
-
-</div>
-
-    
 </template>
 
-<script>
+<script >
+import ShippingInfo from '../components/checkout/ShippingInfo.vue'
+import ShoppingCart from '../components/checkout/ShoppingCart.vue'
 export default {
-    data () {
-        return {
-        confText: 'Thank you for your order, we will send you a confirmation with the order details to your email.',
-        conf: false,
-        formShow: true
-        }
-    },
-    methods: {
-        
-            confirmation (e) {
-                e.preventDefault()
-                this.conf = true
-                this.formShow = false
+    components: { ShippingInfo, ShoppingCart},
+    
+    data(){
 
-            }
-            
-        //    return document.querySelector(".confirmation-div").style.display = 'none';
-            
-            //  p.insertAdjacentHTML('afterbegin', )
-        
+    },
+    computed:{
+        cartItems(){
+            return this.$store.state.cart
+        }
     }
 }
 </script>
 
-<style scoped>
-
-.checkout {
-    justify-content: center;
-    padding-top: 20px;
-}
-
-
-.btn {
-      background-color: rgb(97, 37, 37);
-      border-color: white; 
-      width: 150px;
-      height: 50px;
-      font-size: 20px;
-  }
-
-  .confirmationrow {
-      justify-content: center;
-      padding-top: 20px;
-  }
-
- 
+<style scoped> 
 
 </style>

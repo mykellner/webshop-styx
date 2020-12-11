@@ -37,7 +37,7 @@ h4 {
 /*------------Herosection About us-------------*/
 
 .about-us {
-    background-image: url(img/about-wine.png);
+    /* background-image: url(img/about-wine.png); */
     text-align: center;
     padding: 100px;
     text-shadow: grey;

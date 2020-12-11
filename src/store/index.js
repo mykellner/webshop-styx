@@ -116,6 +116,7 @@ export default new Vuex.Store({
     ],   
     isAdmin:[],    
     cart:[],
+    orders:[],
     selectedWine: {}
    
   },

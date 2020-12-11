@@ -1,7 +1,7 @@
 <template>
     <div class="col mb-4">
             <div class="card">
-                <img :src="wine.image" class="card-img-top mx-auto d-block" alt="...">
+                <img :src="wine.image" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">{{ wine.name }}</h5>
                     <p class="card-text">{{ wine.description }}</p>
@@ -39,13 +39,7 @@ export default {
             // console.log(wine);
             //  push item to cart object in the storage
             this.$store.commit('addToCart', wine);
-            console.log(wine);
-        },
-        selectedWine(wine)
-        {
-            this.$store.commit('setSelectedWine', wine);
-        
-        } 
+        }
     }
 
    
