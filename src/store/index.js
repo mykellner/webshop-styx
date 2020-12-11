@@ -149,7 +149,7 @@ export default new Vuex.Store({
           qty:1,
           price:wine.price,
           origin:wine.origin,
-          image:"",
+          image:wine.image,
           category:wine.category          
         }
         state.cart.push(orders)
