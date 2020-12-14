@@ -53,14 +53,9 @@ h4 {
 button {
     background-color: rgb(111, 44, 44);
     border-color: white;
-    width: 300px;
-    height: 70px;
     
 }
 
-.btn-danger {
-    font-size: 30px;
-}
 
 /*------------Second section - About wine-------------*/
 
