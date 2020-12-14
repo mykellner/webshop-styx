@@ -4,7 +4,7 @@
                <div class=" container">
                    <div class="row">
                      <div class="col-sm"><h1>This is us</h1>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet odit doloribus odio, sapiente, nisi qui labore vel inventore nam quod voluptatem laborum praesentium numquam asperiores, deleniti iure. Dolore, praesentium! Accusantium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptates eius ducimus error maiores cupiditate blanditiis illo expedita saepe deserunt. Sapiente enim quas asperiores voluptates repellendus incidunt nam temporibus quaerat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere facilis aliquam dolore asperiores vel tenetur explicabo repudiandae. Dolorem animi ut eveniet, assumenda, beatae debitis aperiam reprehenderit inventore atque ducimus et.</p>
+                        <p>Our Wineshop aims to bring the reality of the Italian wine industry to the world's attention, and to give these "craftsmen of wine" the chance to have their work recognised by an increasingly large public. The experts at Wineshop.it travel Italy in search of excellence. Before a wine enters our catalogue it undergoes rigorous tasting tests and only wines that pass these procedures are stocked. As you can imagine, for some of our wine-makers the number of bottles available for sale each year is somewhat limited. This is why you may occasionally find some wines out of stock, in which case we recommend that you book ahead.</p>
 
                     <button type="button" class="btn btn-danger">Order your wine now</button>
            </div>
