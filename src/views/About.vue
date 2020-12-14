@@ -3,7 +3,7 @@
           <div class="jumbotron about-us">
                <div class=" container">
                    <div class="row">
-                     <div class="col-sm"><h1>This is us</h1>
+                     <div class="col-sm"><h2>This is us</h2>
                         <p>Our Wineshop aims to bring the reality of the Italian wine industry to the world's attention, and to give these "craftsmen of wine" the chance to have their work recognised by an increasingly large public. The experts at Wineshop.it travel Italy in search of excellence. Before a wine enters our catalogue it undergoes rigorous tasting tests and only wines that pass these procedures are stocked. As you can imagine, for some of our wine-makers the number of bottles available for sale each year is somewhat limited. This is why you may occasionally find some wines out of stock, in which case we recommend that you book ahead.</p>
 
                     <button type="button" class="btn btn-danger">Order your wine now</button>
