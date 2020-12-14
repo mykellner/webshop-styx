@@ -3,7 +3,7 @@
                 <div class="d-flex flex-grow-1">
                     <span class="w-100 d-lg-none d-block"></span>
                     <!-- logo for full menu -->
-                     <router-link to="/" class="navbar-brand d-none d-lg-inline-block">The Wine Exports</router-link> |
+                     <router-link to="/" class="navbar-brand d-none d-lg-inline-block">The Wine Exports</router-link> 
                     <!-- <a class="navbar-brand d-none d-lg-inline-block" href="#"> -->
                   
                     <!-- logo for collapsed menu -->
@@ -23,9 +23,22 @@
                         <li class="nav-item">
                             <router-link to="/" class="nav-link m-2 menu-item">Home</router-link>
                         </li>
+
+                        <li class="nav-item dropdown" > 
+                           <a class="nav-link dropdown-toggle m-2 menu-item" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categories
+                           </a>                      
+                        
+                            <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
+                                <router-link v-for="(category, i) in categories" :key="i" :to="'/category/'+category.id" class="nav-link m-2 menu-item ">{{ category.name }}</router-link>
+                                
+                            </div>
+                        </li>
+
                         <li class="nav-item">
                             <router-link to="/about" class="nav-link m-2 menu-item">About us</router-link>
                         </li>
+
                         <li class="nav-item dropdown">
                             
                             <div class="btn-group m-2">
@@ -46,6 +59,13 @@
 
 <script>
 export default {
+
+    data(){
+        return {
+        categories: this.$store.state.categories,
+        }
+            
+    },
 
     computed: {
         howManyOrders()

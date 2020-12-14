@@ -111,7 +111,7 @@ export default new Vuex.Store({
       },
       {
         id:3,
-        name:"Category 3"        
+        name:"Berry"        
       }
     ],   
     isAdmin:[],    
