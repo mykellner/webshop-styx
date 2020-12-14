@@ -16,18 +16,7 @@
 
 <!-- Jumbotron with image and text about wine -->
 
-    <div class="jumbotron about-wine">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm"><img class="img-fluid" src="img/wineyard.jpg" alt="">
-                </div>
-                     <div class="col-sm"><h1>Well selected wines just for you</h1>
-                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet odit doloribus odio, sapiente, nisi qui labore vel inventore nam quod voluptatem laborum praesentium numquam asperiores, deleniti iure. Dolore, praesentium! Accusantium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis voluptates eius ducimus error maiores cupiditate blanditiis illo expedita saepe deserunt. Sapiente enim quas asperiores voluptates repellendus incidunt nam temporibus quaerat!</p>
-
-                    </div>
-                </div>
-            </div>
-        </div>
+ 
 <!-- End of jumbotron -->
 </template>
 
@@ -52,7 +41,7 @@ h4 {
 /*------------Herosection About us-------------*/
 
 .about-us {
-    background-image: url(img/about-wine.png);
+    background-image: url(../assets/about-wine.png);
     text-align: center;
     padding: 100px;
     text-shadow: grey;
