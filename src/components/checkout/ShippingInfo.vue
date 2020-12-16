@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row checkout">
             <div class="col-6">
-            <form v-on:submit="confirmation" v-show="formShow">
+            <form v-on:submit="confirmation" v-show="showForm">
             <div class="form-group">
                 <label for="name">Name</label>
                 <input type="name" class="form-control" id="name" placeholder="Your name">
@@ -22,7 +22,7 @@
 
         <div class="row confirmationrow">
             <div class="confirmation-div">
-                <p v-show="conf">{{confText}}</p>
+                <p v-show="showConf">{{confText}}</p>
             </div>
             </div>
 
@@ -36,16 +36,16 @@ export default {
     data () {
         return {
         confText: 'Thank you for your order, we will send you a confirmation with the order details to your email.',
-        conf: false,
-        formShow: true
+        showConf: false,
+        showForm: true
         }
     },
     methods: {
         
             confirmation (e) {
                 e.preventDefault()
-                this.conf = true
-                this.formShow = false
+                this.showConf = true
+                this.showForm = false
 
             }
             
