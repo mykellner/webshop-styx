@@ -28,10 +28,9 @@ export default {
     computed:{
         getCartItems(){
             return this.$store.getters.getCartItems
-    },
+        },
     
-    }
-    }
-
+        }
 }
+    
 </script>
