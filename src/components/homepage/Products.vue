@@ -33,14 +33,13 @@ export default {
     },
 
     methods:{
+        // add the wine to cart
         addToCart(wine)
         {
-            // console log to check if the wine is appearing or not
-            // console.log(wine);
-            //  push item to cart object in the storage
             this.$store.commit('addToCart', wine);
         },
 
+        // set state.selectedWine for individual product page
         selectedWine(wine)
         {
             this.$store.commit('setSelectedWine', wine);

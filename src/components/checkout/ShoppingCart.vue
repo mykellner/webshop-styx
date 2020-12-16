@@ -29,12 +29,7 @@ export default {
         getCartItems(){
             return this.$store.getters.getCartItems
     },
-    totalPrice(){
-        let total=0;
-        this.$store.getters.getCartItems.forEach(i => { total += i.qty * i.price})
-        return total
-
-    }
+    
     }
 
 }

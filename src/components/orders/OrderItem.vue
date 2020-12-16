@@ -37,23 +37,12 @@ export default {
         item: {
             type:Object,
         },
-
-        data() {
-            return {
-                totalPrice:''
-            }
-        },
-
-
-        computed: {
-            totalPrice(){
-                let total=0;
-                this.item.cartItems.forEach(i => { total += i.qty * i.price})
-                return total
-                },
-            
-        },
     }
+
+        
+
+
+        
 }
 </script>
 

@@ -34,16 +34,15 @@
 export default {
 
     computed: {
+        // get selected wine
         wine () {
-            return this.$store.state.selectedWine
+            return this.$store.getters.getSelectedWine
         }
     },
       methods:{
+          // add the selected wine to cart
         addToCart(wine)
         {
-            // console log to check if the wine is appearing or not
-            // console.log(wine);
-            //  push item to cart object in the storage
             this.$store.commit('addToCart', wine);
             console.log(wine);
         }
@@ -53,12 +52,7 @@ export default {
 </script>
 
 <style scoped>
-  /* .single_product {
-      padding-top: 66px;
-      padding-bottom: 140px;
-      margin-top: 0px;
-      padding: 17px
-  } */
+
 
   .product_name {
       font-size: 25px;
@@ -91,13 +85,7 @@ export default {
       color: #000000
   }
 
-  /* div {
-      display: block;
-      position: relative;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box
-  } */
+
 
   ul {
       list-style: none;

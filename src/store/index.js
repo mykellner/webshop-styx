@@ -21,7 +21,6 @@ export default new Vuex.Store({
         description:"Grape flavor with hints of yellow pear, almond, white peach and citrus peel.",
         price:"95",
         origin:"Italy",
-        //https://stackoverflow.com/questions/53412106/linking-to-images-referenced-in-vuex-store-in-vue-js - require
         image:require("../assets/Tommasi.png"),
         category:2
       },
@@ -112,54 +111,62 @@ export default new Vuex.Store({
       {
         id:3,
         name:"Berry"        
-      }
+      },
+     
     ],   
-    isAdmin:false,    
+    isAdmin:false, // either true or false   
     cart:[],
-    orders:[],
+    orders:[], // cartInfo, cartItems
     selectedWine: {}
-
    
   },
 
+  // this allows app to get the value from state section
   getters: {
+    // get the selected wine for product page from state.selectedWine
     getSelectedWine (state) {
       return state.selectedWine
     },
-
+    // get the updated data from state.cart
     getCartItems(state) {
       return state.cart
     },
-
+    // get the updated item from  state.orders
     getOrderItems(state){
       return state.orders
     }
   },
 
 
+  // this allows app to update the array inside state section
   mutations: {
+    // more items from state.cart and client info from the form, after that, empty the cart
     setOrder(state, order){
-      state.orders.push(order)
-      state.cart = []
+      state.orders.push(order) //move the data
+      state.cart = [] //empty the cart
 
     },
 
+    // toggle the state of state.isAdmin
     loginAsAdmin(state){
-        state.isAdmin = !state.isAdmin;
+        state.isAdmin = !state.isAdmin; 
     },
 
+    // set selected wine for product page
     setSelectedWine (state, wine){
       state.selectedWine = wine;
     },
 
+    // add selected wine to state.cart
     addToCart(state, wine)
     {
       // check if cart already has this item or not
       let existingItems = state.cart.find( o => (o.id === wine.id) )
       
       if(existingItems){
-          existingItems.qty += 1
+          existingItems.qty += 1 // if item is already there, just increase the qty, no need to create duplicate item
       }else{
+        // if item doesnt exist, setup the data
         let orders = {
           id:wine.id,
           name:wine.name,
@@ -170,13 +177,14 @@ export default new Vuex.Store({
           image:wine.image,
           category:wine.category          
         }
+        // and push the data
         state.cart.push(orders)
       }      
       
     },
 
     deleteItemFromCart(state, item){
-         
+         // delete the selected item form state.cart, sytax ===> array.splice(index,count from index) LEARN THIS!!!!!
          state.cart.splice(state.cart.indexOf(item),1)
     }
    

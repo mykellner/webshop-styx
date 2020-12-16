@@ -32,17 +32,20 @@ export default {
      data() {
         return {
 
-            wines: this.$store.state.products,
-            categories: this.$store.state.categories,
+            wines: this.$store.state.products, // get wine data 
+            categories: this.$store.state.categories, //get category data
             
             
         }
     },
     methods:{
+
+        // get name of category that matches the id from url
         getCategoryName(){
             return this.categories.find(category => category.id == this.$route.params.id).name
         },
         getWines(){
+            // this.$route.params.id is getting data from url, params is the dynamic number in the url of category page
             return this.wines.filter(wine => wine.category == this.$route.params.id)
         }
     }

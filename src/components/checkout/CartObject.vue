@@ -25,6 +25,8 @@ export default {
        
     },
     methods:{
+
+        // remove the item from state.cart through mutation
         deleteItem(item){
             this.$store.commit('deleteItemFromCart',item)
             

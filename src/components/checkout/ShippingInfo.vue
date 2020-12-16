@@ -51,12 +51,12 @@ export default {
         
             confirmation (e) {
 
-
+                // prepare the item to be moved from state.cart and the form above to state.order
                 this.order = {
                     clientInfo:this.clientInfo,
                     cartItems:this.getCartItems                    
                 };
-                this.$store.commit('setOrder', this.order);
+                this.$store.commit('setOrder', this.order); // move the data to state.order
                 
 
                 e.preventDefault()
@@ -68,10 +68,7 @@ export default {
 
             },
 
-            dispatchOrder(){
-                
-            },
-
+            
 
             
             

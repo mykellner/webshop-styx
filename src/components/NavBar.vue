@@ -30,7 +30,9 @@
                            </a>                      
                         
                             <div class="dropdown-menu bg-dark"  aria-labelledby="navbarDropdown" >
-                                <router-link v-for="(category, i) in categories" :key="i" :to="'/category/'+category.id" class="nav-link m-2 menu-item ">{{ category.name }}</router-link>
+                                <router-link v-for="(category, i) in categories" :key="i" :to="'/category/'+category.id" class="nav-link m-2 menu-item ">
+                                    {{ category.name }}
+                                </router-link>
                                 
                             </div>
                         </li>
@@ -52,14 +54,15 @@
                                 </div>
                                 </div>
                         </li>
-                        <li class="nav-item" >
-                            <!-- <a @click="switchAdmin">Login as Admin</a> -->
-                            
+                        <li class="nav-item" >                            
                             <router-link  class="nav-link m-2 menu-item"  @click.native="switchAdmin" to=""> 
-                               <span v-if="isAdmin">Logout as Admin</span>
+                                <!-- show if isAdmin is true -->
+                               <span v-if="isAdmin">Logout as Admin</span> 
+                               <!-- show if isAdmin is false -->
                                <span v-else> Login as Admin </span>
                             </router-link>
                         </li>
+                        <!-- show if logged in as administrator -->
                         <li class="nav-item"  v-if="isAdmin">
                              <router-link to="/orders" class="nav-link m-2 menu-item">Orders</router-link>    
                         </li>
@@ -73,14 +76,14 @@ export default {
 
     data(){
         return {
+            // get categories from state
         categories: this.$store.state.categories,
         }
             
     },
-    mounted() {
-        console.log(this.$store.state.isAdmin);
-    },
+   
     methods: {
+        // login or log out the admin, calls mutation in the store file
         switchAdmin()
         {
             this.$store.commit('loginAsAdmin');
@@ -88,10 +91,12 @@ export default {
     },
 
     computed: {
+        // count how many unique items have been added to cart
         howManyOrders()
         {
             return this.$store.state.cart.length;
         },
+        // check if logged in as admin or not.
         isAdmin()
         {
             return this.$store.state.isAdmin;

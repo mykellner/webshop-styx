@@ -20,10 +20,11 @@ export default {
     components: {OrderItem},
     
     computed:{
+        //get data from state.order
         getOrderItems(){
             return this.$store.getters.getOrderItems
     },
-    
+    // check if logged in as admin
     isAdmin()
         {
             return this.$store.state.isAdmin;
