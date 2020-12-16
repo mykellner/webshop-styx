@@ -1,6 +1,7 @@
 <template>
     <div class="container">
-        <table class="table table-hover">
+        
+        <table class="table table-hover" >
         <thead>
             <tr>            
             <th scope="col">Name</th>
@@ -23,16 +24,17 @@
 import CartObject from './CartObject.vue';
 export default {
     components: {CartObject},
+    
     computed:{
         getCartItems(){
             return this.$store.getters.getCartItems
-        },
-        totalPrice(){
-            let total = 0
-            this.$store.getters.getCartItems.forEach(i => { total += i.qty * i.price})
-            return total
+    },
+    totalPrice(){
+        let total=0;
+        this.$store.getters.getCartItems.forEach(i => { total += i.qty * i.price})
+        return total
 
-        }
+    }
     }
 
 }

@@ -114,10 +114,11 @@ export default new Vuex.Store({
         name:"Berry"        
       }
     ],   
-    isAdmin:[],    
+    isAdmin:false,    
     cart:[],
     orders:[],
     selectedWine: {}
+
    
   },
 
@@ -128,15 +129,27 @@ export default new Vuex.Store({
 
     getCartItems(state) {
       return state.cart
+    },
+
+    getOrderItems(state){
+      return state.orders
     }
   },
 
 
   mutations: {
+    setOrder(state, order){
+      state.orders.push(order)
+      state.cart = []
+
+    },
+
+    loginAsAdmin(state){
+        state.isAdmin = !state.isAdmin;
+    },
 
     setSelectedWine (state, wine){
       state.selectedWine = wine;
-      console.log("Changed:", state.selectedWine)
     },
 
     addToCart(state, wine)
@@ -160,7 +173,6 @@ export default new Vuex.Store({
         state.cart.push(orders)
       }      
       
-      console.log(state.cart);
     },
 
     deleteItemFromCart(state, item){

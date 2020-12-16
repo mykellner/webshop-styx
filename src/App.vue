@@ -17,7 +17,7 @@
 
       </main>
       <footer>
-             
+             <footer-component />
       </footer>
     </div>
     
@@ -27,10 +27,12 @@
 <script>
 import NavBar from './components/NavBar.vue'
 import JumboTron from './components/JumboTron.vue'
+import FooterComponent from './components/FooterComponent.vue'
+
 
 export default {
 
-  components:{ NavBar, JumboTron },
+  components:{ NavBar, JumboTron, FooterComponent },
 
   
   
