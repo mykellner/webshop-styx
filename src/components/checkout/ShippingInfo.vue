@@ -5,15 +5,15 @@
             <form v-on:submit="confirmation" v-show="formShow">
             <div class="form-group">
                 <label for="name">Name</label>
-                <input type="name" class="form-control" id="name" placeholder="Your name">
+                <input v-model="clientInfo.name" type="name" class="form-control" id="name" placeholder="Your name">
             </div>
             <div class="form-group">
                 <label for="email">Email address</label>
-                <input type="email" class="form-control" id="email" placeholder="Enter email">
+                <input  v-model="clientInfo.email" type="email" class="form-control" id="email" placeholder="Enter email">
             </div>
             <div class="form-group">
                 <label for="card-details">Card Details</label>
-                <input type="card-details" class="form-control" id="card-details" placeholder="Card details">
+                <input  v-model="clientInfo.card" type="card-details" class="form-control" id="card-details" placeholder="Card details">
             </div>
             <button type="submit" class="btn btn-danger shop-button">Submit order</button>
             </form>
@@ -37,22 +37,55 @@ export default {
         return {
         confText: 'Thank you for your order, we will send you a confirmation with the order details to your email.',
         conf: false,
-        formShow: true
+        formShow: true,
+        clientInfo:
+            {
+                name:'',
+                email:'',
+                card:''
+            },
+        order:''
         }
     },
     methods: {
         
             confirmation (e) {
+
+
+                this.order = {
+                    clientInfo:this.clientInfo,
+                    cartItems:this.getCartItems                    
+                };
+                this.$store.commit('setOrder', this.order);
+                
+
                 e.preventDefault()
                 this.conf = true
                 this.formShow = false
 
-            }
+
+                // console.log(this.clientInfo);
+
+            },
+
+            dispatchOrder(){
+                
+            },
+
+
+            
             
         //    return document.querySelector(".confirmation-div").style.display = 'none';
             
             //  p.insertAdjacentHTML('afterbegin', )
         
+    },
+
+    computed:{
+
+        getCartItems(){
+            return this.$store.getters.getCartItems
+        },
     }
 }
 </script>

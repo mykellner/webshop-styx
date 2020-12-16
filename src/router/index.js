@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Product from '../views/Product.vue'
 import Checkout from '../views/Checkout.vue'
 import Category from '../views/Category.vue';
+import Order from '../views/Admin/Order.vue'
 
 Vue.use(VueRouter)
 
@@ -29,6 +30,11 @@ const routes = [
     component: Category
   },
   {
+    path: '/orders',
+    name: 'Orders',
+    component: Order
+  },
+  {
     path: '/about',
     name: 'About',
     // route level code-splitting
@@ -36,6 +42,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   }
+  
 ]
 
 const router = new VueRouter({

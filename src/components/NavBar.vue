@@ -29,7 +29,7 @@
                             Categories
                            </a>                      
                         
-                            <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" >
+                            <div class="dropdown-menu bg-dark"  aria-labelledby="navbarDropdown" >
                                 <router-link v-for="(category, i) in categories" :key="i" :to="'/category/'+category.id" class="nav-link m-2 menu-item ">{{ category.name }}</router-link>
                                 
                             </div>
@@ -52,6 +52,17 @@
                                 </div>
                                 </div>
                         </li>
+                        <li class="nav-item" >
+                            <!-- <a @click="switchAdmin">Login as Admin</a> -->
+                            
+                            <router-link  class="nav-link m-2 menu-item"  @click.native="switchAdmin" to=""> 
+                               <span v-if="isAdmin">Logout as Admin</span>
+                               <span v-else> Login as Admin </span>
+                            </router-link>
+                        </li>
+                        <li class="nav-item"  v-if="isAdmin">
+                             <router-link to="/orders" class="nav-link m-2 menu-item">Orders</router-link>    
+                        </li>
                     </ul>
                 </div>
             </nav>
@@ -66,12 +77,26 @@ export default {
         }
             
     },
+    mounted() {
+        console.log(this.$store.state.isAdmin);
+    },
+    methods: {
+        switchAdmin()
+        {
+            this.$store.commit('loginAsAdmin');
+        }
+    },
 
     computed: {
         howManyOrders()
         {
             return this.$store.state.cart.length;
+        },
+        isAdmin()
+        {
+            return this.$store.state.isAdmin;
         }
+        
     }
 };
 </script>
