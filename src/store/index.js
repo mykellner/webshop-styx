@@ -118,6 +118,7 @@ export default new Vuex.Store({
     cart:[],
     orders:[], // cartInfo, cartItems
     selectedWine: {}
+
    
   },
 
