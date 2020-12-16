@@ -136,7 +136,6 @@ export default new Vuex.Store({
 
     setSelectedWine (state, wine){
       state.selectedWine = wine;
-      console.log("Changed:", state.selectedWine)
     },
 
     addToCart(state, wine)

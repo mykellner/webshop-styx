@@ -1,29 +1,23 @@
 <template>
    <div class="container">
    
-                <div class="row">
+            <div class="row">
 
-                  <div class="col-6">
-
+                <div class="col-6">
                      <img :src="wine.image" class="image" alt="">
+                </div>
 
-                     </div>
-                        <div class="col-6 product-information">
-                            <div class="product-info">
-
+                <div class="col-6 product-information">
+                    <div class="product-info">
                         <div class="product_name">{{wine.name}}
-
                         <span class="product_price">{{wine.price}} :- </span>
                         </div>
-
                          <p>{{wine.description}}</p>
-
                     </div>
 
-                         <div class="row button-div">
-                        <button type="button" v-on:click=addToCart(wine) class="btn btn-danger shop-button">Add to cart</button> 
-                    
-                </div>
+                    <div class="row button-div">
+                        <button type="button" v-on:click=addToCart(wine) class="btn btn-danger shop-button">Add to cart</button>   
+                    </div>
                   
              </div>
         </div>
